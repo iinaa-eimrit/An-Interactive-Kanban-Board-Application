@@ -1,0 +1,60 @@
+.Dashboard-Container {
+  height: calc(100% - 60px);
+  padding: 25px;
+  gap: 20px;
+  width: 100%;
+  overflow-x: hidden;
+  zoom: 0.75;
+  display: flex;
+  flex-wrap: wrap;
+
+  .column {
+    flex: 1;
+    max-width: calc(20% - 20px);
+    border-radius: 8px;
+  }
+  .Header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+
+    .icon-text {
+      display: flex;
+      align-items: center;
+      i {
+        font-size: 22px;
+      }
+      .text {
+        padding: 0px 12px;
+        font-weight: 600;
+        color: black;
+        font-size: 16px;
+      }
+      span {
+        color: #8a8585;
+        font-size: 16px;
+      }
+      #todo{
+        color: #8a8585;
+      }
+      #progress{
+        color: rgba(247, 166, 15, 0.699);
+      }
+      #done{
+        color: rgba(79, 39, 210, 0.71);
+      }
+      #cancel{
+        color: #8a8585cd;
+      }
+      #backlog{
+        color: rgb(80, 55, 206);
+      }
+    }
+    .actions {
+      i {
+        font-size: 22px;
+        color: #8a8585;
+      }
+    }
+  }
+}

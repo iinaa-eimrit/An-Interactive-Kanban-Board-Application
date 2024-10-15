@@ -1,0 +1,145 @@
+.card {
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 15px;
+
+  .card-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .card-header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 5px;
+    justify-content: space-between;
+
+    p {
+      font-family: "Arial", sans-serif;
+      font-size: 15px;
+      color: $primary-color;
+      margin-right: 10px;
+      font-weight: 600;
+    }
+  }
+
+  .card-title {
+    margin-bottom: 10px;
+
+    p {
+      font-weight: 500;
+      font-size: 15px;
+      color: #000000;
+      font-weight: 600;
+    }
+  }
+
+  .card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    flex-wrap: wrap;
+
+    .icons {
+      height: 20px !important;
+    }
+
+    .feature-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid #ada4a48e;
+      width: fit-content;
+      border-radius: 3px;
+      padding: 0px 3px;
+      margin-left: 4px;
+      margin-top: 4px;
+
+      i {
+        color: #ada4a4;
+        padding: 2px 0px;
+      }
+
+      .alert-icon {
+        width: 9px;
+        height: 8px;
+        background-color: #ada4a4b8;
+        border-radius: 50%;
+      }
+
+      .feature-request {
+        font-family: "Arial", sans-serif;
+        font-size: 14px;
+        color: $primary-color;
+        padding: 2px 3px;
+      }
+    }
+  }
+}
+
+.status-heading{
+    display: flex;
+    p{
+        padding-left: 3px;
+    }
+
+    #todo{
+        color: #8a8585;
+      }
+      #progress{
+        color: rgba(247, 166, 15, 0.699);
+      }
+      #done{
+        color: rgba(79, 39, 210, 0.71);
+      }
+      #cancel{
+        color: #8a8585cd;
+      }
+      #backlog{
+        color: rgb(80, 55, 206);
+      }
+}
+
+.icon-text-priority{
+    display: flex;
+    align-items: center;
+    .text {
+        font-weight: 600;
+        color: black;
+        font-size: 16px;
+        padding-right: 12px;
+        margin-bottom: -2px;
+      }
+    i{
+        font-size: 22px;
+    }
+    #noPriority{
+        color: #8a8585;
+        margin-right: 12px;
+    }
+    #low{
+        color: #8d8787;
+        margin-bottom: 2px;
+    }
+    #medium, #high{
+        color: #8d8787;
+        margin-right: 6px;
+    }
+    #urgent{
+        color: rgb(247, 166, 15);
+        margin-right: 12px;
+    }
+    .count{
+        margin-bottom: -2px;
+    }
+}
